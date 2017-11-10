@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <script src="script.js" charset="UTF-8" type="text/javascript"></script>
+ 
+ <style>
+.buton {
+    background-color:#0174DF;
+	width:70px;
+	height:40px;
+	font-weight:bold; 
+	color:#D7DF01;
+}
+
+</style>
+ </head>
+ 
+ 
+ <body onload=comanda('C')>
+  <div id="calculator" style="position:absolute;left:50%;top:300px;width:400px;height:400px;margin-top:-200px;margin-left:-200px;">
+  <table border="1" cellpadding="5" bordercolor="#6E6E6E" cellspacing="0">
+  <tr>
+  <td colspan="4" align="center">
+      <input type="text" id="ecran" value="0" readonly style="background-color:#AEB404;width:280px;height:50px;font-weight:bold; color:#6E6E6E; text-align:right; padding-right:10px;padding-top:5px;font-size:34px">
+     </td>
+  </tr>
+  <tr>  
+  <td>
+   <table border="0" style="width:100%">
+    <tr>
+     
+    </tr>
+    <tr>
+     <td align="center"><input type="button" class="buton" value="MC" onClick=comanda('MC')></td>
+     <td align="center"><input type="button" class="buton" value="MR" onClick=comanda('MR')></td>
+     <td align="center"><input type="button" class="buton" value="MS" onClick=comanda('MS')></td>
+     <td align="center"><input type="button" class="buton" value="&larr;" onClick=comanda('BS')></td>
+    </tr>
+    <tr>
+     <td align="center"><input type="button" class="buton" value="sin(x)" onClick=comanda('sin')></td>
+     <td align="center"><input type="button" class="buton" value="cos(x)" onClick=comanda('cos')></td>
+     <td align="center"><input type="button" class="buton" value="tg(x)" onClick=comanda('tg')></td>
+     <td align="center"><input type="button" class="buton" value="e^x" onClick=comanda('ex')></td>
+    </tr>
+
+    <tr>
+     <td align="center"><input type="button" class="buton" value="&radic;x" onClick=comanda('radical')></td>
+     <td align="center"><input type="button" class="buton" value="&Pi;" onClick=comanda('PI')></td>
+     <td align="center"><input type="button" class="buton" value="x&sup2;" onClick=comanda('sup2')></td>
+     <td align="center"><input type="button" class="buton" value="x&sup3;" onClick=comanda('sup3')></td>
+    </tr>
+
+
+    <tr>
+     <td align="center"><input type="button" class="buton" value="7"  onClick=comanda(7)></td>
+     <td align="center"><input type="button" class="buton" value="8"  onClick=comanda(8)></td>
+     <td align="center"><input type="button" class="buton" value="9"  onClick=comanda(9)></td>
+     <td align="center"><input type="button" class="buton" value="/"  onClick=comanda('/')></td>
+    </tr>
+
+    <tr>
+     <td align="center"><input type="button" class="buton" value="4"  onClick=comanda(4)></td>
+     <td align="center"><input type="button" class="buton" value="5"  onClick=comanda(5)></td>
+     <td align="center"><input type="button" class="buton" value="6"  onClick=comanda(6)></td>
+     <td align="center"><input type="button" class="buton" value="*"  onClick=comanda('*')></td>
+    </tr>
+
+    <tr>
+     <td align="center"><input type="button" class="buton" value="1"  onClick=comanda(1)></td>
+     <td align="center"><input type="button" class="buton" value="2"  onClick=comanda(2)></td>
+     <td align="center"><input type="button" class="buton" value="3"  onClick=comanda(3)></td>
+     <td align="center"><input type="button" class="buton" value="-" onClick=comanda('-')></td>
+    </tr>
+
+    <tr>
+     <td align="center"><input type="button" class="buton" value="C" onClick=comanda('C')></td>
+     <td align="center"><input type="button" class="buton" value="0" onClick=comanda(0)></td>
+     <td align="center"><input type="button" class="buton" value="." onClick=comanda('.')></td>
+     <td align="center"><input type="button" class="buton" value="+" onClick=comanda('+')></td>
+    </tr>
+
+
+    <tr>
+     <td align="center" colspan="4"><input type="button" value="=" style="background-color:#0174DF;width:290px;height:40px;font-weight:bold; color:#D7DF01" onClick=comanda('=')></td>
+    </tr>
+
+    <tr>
+     <td align="center" colspan="4">Continut memorie : <span id="memorie">0</span></td>
+    </tr>
+
+
+  </table>
+  </td>
+  </tr>
+  </table>
+
+
+  </div>
+ </body>
+
+ 
+
+</html>
